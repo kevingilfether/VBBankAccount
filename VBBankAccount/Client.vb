@@ -2,12 +2,20 @@
     'Class for a customer at the Bank
 
     'Fields
-    Private userID As Int32
-    Private acctName As String
-    Private userName As String
+    Private _userID As Int32
+    Private _acctName As String
+    Private _userName As String
 
 
 
-    Property name
+    Public Property userID() As Int32
+        Get
+            Return _userID
+        End Get
+        Set(value As Int32)
+            _userID = value
+        End Set
+    End Property
+
 
 End Class
