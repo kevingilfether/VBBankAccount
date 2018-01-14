@@ -31,6 +31,12 @@
         Return _balance
     End Function
 
+    Public Overridable Function Withdraw(ByVal numWithdrawn As Double)
+        _balance -= numWithdrawn
+        Return _balance
+    End Function
 
+    'Abstract ViewBalance()
+    Public MustOverride Sub ViewBalance()
 
 End Class
