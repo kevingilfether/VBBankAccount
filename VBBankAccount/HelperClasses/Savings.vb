@@ -21,8 +21,21 @@
         Me._acctType = "Savings Account"
     End Sub
 
-
     Public Overrides Sub ViewBalance()
         Console.WriteLine("The  account balance for {0}: {1} is ${2}.", _acctType, _acctID, Math.Round(_balance, 2))
     End Sub
+
+    'Method to make sure that method is beyond allowed amount
+
+    Public Overrides Function Withdraw(numWithdrawn As Double)
+        Dim maxAllowedDraw As Double = _balance - _acctMin
+        If (numWithdrawn > maxAllowedDraw) Then
+            Console.WriteLine("Please try your withdrawal again, leaving at least ${0} in your account.", Math.Round(_acctMin, 2))
+            Console.WriteLine("You may withdraw a maxmum of ${0} without making a new deposit.", Math.Round(maxAllowedDraw, 2))
+            Return _balance
+        Else
+            Return MyBase.Withdraw(numWithdrawn)
+        End If
+    End Function
+
 End Class
