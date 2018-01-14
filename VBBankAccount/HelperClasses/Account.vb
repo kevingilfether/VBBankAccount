@@ -1,4 +1,4 @@
-﻿MustInherit Class Account
+﻿Public MustInherit Class Account
 
     Protected _acctID As Int32
     Protected _balance As Double
