@@ -15,6 +15,6 @@
 
 
     Public Overrides Sub ViewBalance()
-        Console.WriteLine()
+        Console.WriteLine("The  account balance for {0}: {1} is ${2}.", _acctType, _acctID, Math.Round(_balance, 2))
     End Sub
 End Class
