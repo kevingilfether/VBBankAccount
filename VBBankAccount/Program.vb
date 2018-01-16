@@ -18,12 +18,32 @@ Module Program
 
         Dim goAgain As Boolean
         Dim userChoice1 As Int32
-        Dim userChoice2 As Char
+        Dim userChoiceA As Char
 
         goAgain = True
 
         Do While goAgain = True
             MenuPrinter()
+            userChoice1 = Integer.Parse(Console.ReadLine())
+
+            'Select instead of switch
+            Select Case userChoice1
+                Case 1
+                    clientList(0).ViewClientInfo()
+                Case 2
+                    LowerMenuPrinter()
+
+                    userChoiceA = Char.Parse(Console.ReadLine().ToLower)
+                    Select Case userChoiceA
+                        Case "a"
+                            checkingList(0).ViewBalance()
+                        Case "b"
+                            checkingList(0).ViewBalance()
+                    End Select
+
+                Case 3
+
+            End Select
 
         Loop
 
