@@ -17,9 +17,13 @@ Module Program
         savingsList.Add(New Savings(clientList(0), 595, 100))
 
         Dim goAgain As Boolean
+        Dim userChoice1 As Int32
+        Dim userChoice2 As Char
+
         goAgain = True
 
         Do While goAgain = True
+            MenuPrinter()
 
         Loop
 
