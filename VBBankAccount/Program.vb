@@ -16,6 +16,13 @@ Module Program
         'Without DIM on preceding line
         savingsList.Add(New Savings(clientList(0), 595, 100))
 
+        Dim goAgain As Boolean
+        goAgain = True
+
+        Do While goAgain = True
+
+        Loop
+
 
 
 
