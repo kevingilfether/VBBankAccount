@@ -5,10 +5,9 @@ Module Program
         Console.WriteLine("Welcome to United Banking Software!")
         Console.WriteLine()
 
-        Dim rand As Random
-        Dim clientList As List(Of Client)
-        Dim checkingList As List(Of Checking)
-        Dim savingsList As List(Of Savings)
+        Dim clientList As New List(Of Client)
+        Dim checkingList As New List(Of Checking)
+        Dim savingsList As New List(Of Savings)
 
         clientList.Add(ClientMaker())
         Dim checking As New Checking(clientList.First(), 1400)
