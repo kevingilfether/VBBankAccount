@@ -82,10 +82,18 @@ Module Program
                             Console.WriteLine()
                             savingsList(0).ViewBalance()
                     End Select
+                Case 5
+                    goAgain = False
 
+                Case Else
+                    MenuPrinter()
+
+                    userChoice1 = Integer.Parse(Console.ReadLine())
             End Select
 
         Loop
+
+        Console.WriteLine("Have a nice day!")
 
     End Sub
 
