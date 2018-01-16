@@ -12,4 +12,18 @@ Module Program
 
 
     End Sub
+
+    Sub ClientMaker()
+        Dim name As String
+        Dim userName As String
+        Dim acctNum As Int32
+
+
+        Console.WriteLine("What is your name")
+
+        name = Console.ReadLine()
+
+
+    End Sub
+
 End Module
