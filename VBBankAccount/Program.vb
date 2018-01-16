@@ -18,10 +18,21 @@ Module Program
         Dim userName As String
         Dim acctNum As Int32
 
-
-        Console.WriteLine("What is your name")
-
+        Console.WriteLine("What is your name?")
         name = Console.ReadLine()
+
+        Console.WriteLine("What is your unique user name?")
+        userName = Console.ReadLine()
+
+        Console.WriteLine("What is your account number?")
+        acctNum = Integer.Parse(Console.ReadLine())
+
+        Dim newClient As New Client
+        With newClient
+            .AcctName = name
+            .UserName = userName
+            .UserID = acctNum
+        End With
 
 
     End Sub
