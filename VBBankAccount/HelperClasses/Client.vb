@@ -47,7 +47,7 @@
     End Sub
 
     Public Sub ViewClientInfo()
-        Console.WriteLine(_userName + " --- " + _acctName + " --- " + _userID)
+        Console.WriteLine("{0} --- {1} --- {2}", _userName, _acctName, _userID)
     End Sub
 
 End Class

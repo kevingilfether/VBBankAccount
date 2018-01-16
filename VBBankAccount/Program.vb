@@ -29,6 +29,7 @@ Module Program
             Select Case userChoice1
                 Case 1
                     clientList(0).ViewClientInfo()
+
                 Case 2
                     LowerMenuPrinter()
 
