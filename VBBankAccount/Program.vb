@@ -23,11 +23,23 @@ Module Program
 
         Loop
 
+    End Sub
 
+    Sub MenuPrinter()
+        Console.WriteLine()
+        Console.WriteLine("Please enter the number for your transaction type")
+        Console.WriteLine("1. View Client Information")
+        Console.WriteLine("2. View Account Balance")
+        Console.WriteLine("3. Deposit Funds")
+        Console.WriteLine("4. Withdraw Funds")
+        Console.WriteLine("5. Exit")
+        Console.WriteLine()
+    End Sub
 
-
-
-
+    Sub LowerMenuPrinter()
+        Console.WriteLine("a. Checking Account")
+        Console.WriteLine("b. Banking Account")
+        Console.WriteLine()
     End Sub
 
     Function ClientMaker()
