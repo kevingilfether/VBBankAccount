@@ -42,6 +42,27 @@ Module Program
                     End Select
 
                 Case 3
+                    LowerMenuPrinter()
+                    userChoiceA = Char.Parse(Console.ReadLine().ToLower)
+
+                    Select Case userChoiceA
+                        Case "a"
+                            Console.WriteLine("How much would you like to deposit?")
+                            Console.WriteLine()
+                            Dim numDeposited = Double.Parse(Console.ReadLine())
+                            checkingList(0).Deposit(numDeposited)
+                            Console.WriteLine()
+                            checkingList(0).ViewBalance()
+                        Case "b"
+                            Console.WriteLine("How much would you like to deposit?")
+                            Console.WriteLine()
+                            Dim numDeposited = Double.Parse(Console.ReadLine())
+                            savingsList(0).Deposit(numDeposited)
+                            Console.WriteLine()
+                            savingsList(0).ViewBalance()
+                        Case Else
+
+                    End Select
 
             End Select
 
