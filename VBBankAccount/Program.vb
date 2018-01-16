@@ -60,8 +60,27 @@ Module Program
                             savingsList(0).Deposit(numDeposited)
                             Console.WriteLine()
                             savingsList(0).ViewBalance()
-                        Case Else
+                    End Select
 
+                Case 4
+                    LowerMenuPrinter()
+                    userChoiceA = Char.Parse(Console.ReadLine().ToLower)
+
+                    Select Case userChoiceA
+                        Case "a"
+                            Console.WriteLine("How much would you like to withdraw?")
+                            Console.WriteLine()
+                            Dim numWithdrawn = Double.Parse(Console.ReadLine())
+                            checkingList(0).Deposit(numWithdrawn)
+                            Console.WriteLine()
+                            checkingList(0).ViewBalance()
+                        Case "b"
+                            Console.WriteLine("How much would you like to deposit?")
+                            Console.WriteLine()
+                            Dim numWithdrawn = Double.Parse(Console.ReadLine())
+                            savingsList(0).Deposit(numWithdrawn)
+                            Console.WriteLine()
+                            savingsList(0).ViewBalance()
                     End Select
 
             End Select
